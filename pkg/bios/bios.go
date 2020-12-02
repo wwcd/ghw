@@ -17,10 +17,11 @@ import (
 
 // Info defines BIOS release information
 type Info struct {
-	ctx     *context.Context
-	Vendor  string `json:"vendor"`
-	Version string `json:"version"`
-	Date    string `json:"date"`
+	ctx          *context.Context
+	SerialNumber string `json:"serial_number"`
+	Vendor       string `json:"vendor"`
+	Version      string `json:"version"`
+	Date         string `json:"date"`
 }
 
 func (i *Info) String() string {
